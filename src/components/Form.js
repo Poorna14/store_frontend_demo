@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ProductSelector from "./ProductSelector";
 
-const API_HOST = "http://localhost:8085";
-const PRODUCT_ORDER_API_URL = `${API_HOST}/order`;
+const PRODUCT_ORDER_API_URL = `${process.env.REACT_APP_API_HOST}/order`;
 
 let orderArr = [];
 
