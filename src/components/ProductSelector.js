@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
 
-const API_HOST = "http://localhost:8085";
-const PRODUCT_API_URL = `${API_HOST}/products`;
-const PRODUCT_PRICE_API_URL = `${API_HOST}/products/`;
+const PRODUCT_API_URL = `${process.env.REACT_APP_API_HOST}/products`;
+const PRODUCT_PRICE_API_URL = `${process.env.REACT_APP_API_HOST}/products/`;
 
 const ProductSelector = ({ products, setProducts, setPrice }) => {
   useEffect(() => {
